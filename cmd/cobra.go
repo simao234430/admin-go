@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"admin-go/cmd/api"
+	"admin-go/cmd/config"
 	"admin-go/core/sdk/pkg"
 	"errors"
 	"fmt"
@@ -37,6 +38,7 @@ func tip() {
 
 func init() {
 	rootCmd.AddCommand(api.StartCmd)
+	rootCmd.AddCommand(config.StartCmd)
 }
 
 //Execute : apply commands
